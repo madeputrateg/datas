@@ -40,3 +40,4 @@ class CFGmsk:
             if i==self.final:
                 print("diterima")
                 return
+            print("ditolak")
