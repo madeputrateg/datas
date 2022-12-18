@@ -111,7 +111,7 @@ class CFGmsk:
         self.cetakTrans()
         self.rmoverlength()
         self.cetakTrans()
-        self.rmnonter()
+        self.rmter()
         self.cetakTrans()
         self.rmsgter()
         self.cetakTrans()
