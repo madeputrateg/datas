@@ -44,4 +44,15 @@ def checkisthere(string,substring):
             return True
     return False
 
+def writemachine(T,V,P,S,nmstr):
+    with open(nmstr,'w',encoding='utf-8') as f:
+        f.write(T)
+        f.write("\n")
+        f.write(V)
+        f.write("\n")
+        f.write(P)
+        f.write("\n")
+        f.write(S)
+        f.write("\n")
+        f.close()
 

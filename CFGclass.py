@@ -10,8 +10,8 @@ class CFGmsk:
         self.final=final
         self.counter=0
         self.newcheck={}
-        self.simplfy()
-        self.convert()
+        # self.simplfy()
+        # self.convert()
     def convert(self):
         simbol=self.simbol
         grammer=self.grammer
@@ -193,6 +193,7 @@ class CFGmsk:
         for i in martixs[len(hslsplt)-1][0]:
 
             if i==self.final:
-                print("diterima")
-                return
-        print("ditolak")
+
+                return "diterima"
+        return "ditolak"
+
