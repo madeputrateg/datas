@@ -12,7 +12,7 @@ def make_mar(pj):
             isi[i].append([])
     return isi
 def read_CFG(namafile):
-    with open(namafile,'r') as file:
+    with open(namafile,'r',encoding='utf-8') as file:
         baca= file.readlines()
         temp={}
         trans={}
@@ -21,16 +21,27 @@ def read_CFG(namafile):
         state=baca[0].split()
         simbol=baca[1].split()
         for i in range(2,len(baca)-1):
-            k=baca[i][2:].split(" | ")
-            temp[baca[i][0]]=[]
+            s=baca[i].split(" -> ")
+            k=s[1].split(" | ")
+            for l in range(len(s)):
+                if s[l]=="Îµ":
+                    s[l]="ε"
+            temp[s[0]]=[]
             for z in k:
-                temp[baca[i][0]].append(z)
-                trans[z]=[]
-        for i in temp:
-            for z in temp[i]:
-                trans[z].append(i)
+                temp[s[0]].append(z.split(" "))
+        #     trans[z]=[]
+        # for i in temp:
+        #     for z in temp[i]:
+        #         trans[z].append(i)
         final=baca[len(baca)-1]
         file.close()
-    return state,simbol,trans,final
+    return state,simbol,temp,final
 
-    
+def checkisthere(string,substring):
+    pj = len(substring)
+    for i in range(len(string)-pj):
+        if string[i:i+pj]==substring:
+            return True
+    return False
+
+
