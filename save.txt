@@ -1,0 +1,7 @@
+AKU XL K S
+as bs
+S -> K AKU
+AKU -> XL AKU AKU XL | as
+XL -> as | bs | ε
+K -> AKU AKU
+S

@@ -1,0 +1,22 @@
+K S P O Pel Ket NP VP AdjP PP NumP Verb Noun Adj Adv Num Prep PropNoun Pronoun
+Adik adik adik-adik air air hujan alat Anak Andi anggota anjing atas Ayah Ayam Ban banteng bibit binatang biru buku Burung cantik Dani dapur depan desa dinding diskusi dokter DPR dunia gajah gelas gerobak goreng hakim hewan hutan ibu inspirasi jam jantan jerapah kakak kakak kakek kayu kebun kecantikan kecap kehamilan kemarin kemarin kepala kepandaian kertas kewajiban kucing kue lagu makanan malam manusia Meja melata Mobil motor narkoba Nasi nasi goreng nasi goreng Operasi orang-orang Padi paman pantai pasar pecandu pedagang pelajar pemburu pemilihan pencuri peristirahatan Persidangan pesan pokok polisi ponsel rapat restoran Rotan ruang rumah sampah sapi sate Sayu sayur-sayuran sebuah secarik sekolah selama semester seorang sepak bola simbol Singkong sore sumber tahun Tani tante tebu Televisi teman tempat tidur Tikus timnas tugas tulis tunangan udang Ular usaha usia waktu warung pantai adalah bangun berkuliah berkumpul berkunjung berkunjung berselancar bertemu bertengkar digigit dipimpin ditembak dituliskan melakukan melihat memakan memasak memasak memasang membawa membeli membuang membuka memelihara memesan memikirkan memukau menarik mencari mengabaikan mengalah mengambil mengerjakan menghuni mengobati menjadi menjual menyantap menyanyikan menyayangi menyebabkan merupakan terasa terbuat Tertangkap tertusuk banyak baru besar konsisten luas mahal manis nakal pada sakit Senang terakhir tertinggi akan dengan jarang kadang-kadang oleh sangat sedang selalu sering setelah sudah telah satu dua seluruh tiga tiap tiga di dari pada Dinda Joni Dinar Pak Asian Tenggara Adi Kuta Putra Dodi saya itu dia disana mereka Aku ini
+K -> S P O | S P O Ket | S P Pel | S P O Pel | S P Ket | S P
+S -> NP
+P -> VP | AdjP
+O -> NP
+Pel -> AdjP | NP
+Ket -> PP | NP
+NP -> Noun | PropNoun | Pronoun | NP Pronoun | Adv NP | NP Adj | NP Noun
+VP -> Verb | Adv VP 
+AdjP -> Adj | Adv AdjP | AdjP NP | AdjP NumP
+PP -> Prep NP | Prep PropNoun | Prep NumP
+NumP -> Num NP | Num
+Verb -> adalah | bangun | berkuliah | berkumpul | berkunjung | berkunjung | berselancar | bertemu | bertengkar | digigit | dipimpin | ditembak | dituliskan | melakukan | melihat | memakan | memasak | memasak | memasang | membawa | membeli | membuang | membuka | memelihara | memesan | memikirkan | memukau | menarik | mencari | mengabaikan | mengalah | mengambil | mengerjakan | menghuni | mengobati | menjadi | menjual | menyantap | menyanyikan | menyayangi | menyebabkan | merupakan | terasa | terbuat | Tertangkap | tertusuk
+Noun -> Adik | adik | adik-adik | air | air hujan | alat | Anak | Andi | anggota | anjing | atas | Ayah | Ayam | Ban | banteng | bibit | binatang | biru | buku | Burung | cantik | Dani | dapur | depan | desa | dinding | diskusi | dokter | DPR | dunia | gajah | gelas | gerobak | goreng | hakim | hewan | hutan | ibu | inspirasi | jam | jantan | jerapah | kakak | kakak | kakek | kayu | kebun | kecantikan | kecap | kehamilan | kemarin | kemarin | kepala | kepandaian | kertas | kewajiban | kucing | kue | lagu | makanan | malam | manusia | Meja | melata | Mobil | motor | narkoba | Nasi | nasi goreng | nasi goreng | Operasi | orang-orang | Padi | paman | pantai | pasar | pecandu | pedagang | pelajar | pemburu | pemilihan | pencuri | peristirahatan | Persidangan | pesan | pokok | polisi | ponsel | rapat | restoran | Rotan | ruang | rumah | sampah | sapi | sate | Sayu | sayur-sayuran | sebuah | secarik | sekolah | selama | semester | seorang | sepak bola | simbol | Singkong | sore | sumber | tahun | Tani | tante | tebu | Televisi | teman | tempat | tidur | Tikus | timnas | tugas | tulis | tunangan | udang | Ular | usaha | usia | waktu | warung | pantai
+Adj -> banyak | baru | besar | konsisten | luas | mahal | manis | nakal | pada | sakit | Senang | terakhir | tertinggi
+Adv -> akan | dengan | jarang | kadang-kadang | oleh | sangat | sedang | selalu | sering | setelah | sudah | telah
+Num -> satu | dua | seluruh | tiga | tiap | tiga
+Prep -> di | dari | pada
+PropNoun -> Dinda | Joni | Dinar | Pak | Asian Tenggara | Adi | Kuta | Putra | Dodi
+Pronoun -> saya | itu | dia | disana | mereka | Aku | ini
+K
